@@ -1,7 +1,7 @@
 package com.sergifam.geoquiz;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
@@ -25,14 +25,11 @@ public class QuizActivity extends AppCompatActivity {
         TrueButtom.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast toastTrue = Toast.makeText(QuizActivity.this, R.string.correct_toast, Toast.LENGTH_LONG);
+                Toast toastTrue = Toast.makeText(QuizActivity.this,
+                        R.string.correct_toast, Toast.LENGTH_LONG);
                 toastTrue.setGravity(Gravity.TOP, 0, 120);
                 toastTrue.show();
-                //                Toast toastTrue = Toast.makeText(QuizActivity.this,
-//                        R.string.correct_toast,
-//                        Toast.LENGTH_LONG);
-//                toastTrue.setGravity(Gravity.TOP, 0, 120);
-//                toastTrue.show();
+
             }
         });
         FalseButtom = findViewById(R.id.false_button);
